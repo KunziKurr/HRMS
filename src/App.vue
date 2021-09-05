@@ -1,32 +1,47 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-snackbar
+      v-model="snackbar"
+      :color="color"
+      :top="true"
+      :right="true"
+      :timeout="timeout"
+      >
+      {{ message }}
+      <v-btn
+        dark
+        text
+        @click="snackbar = false"
+      >
+        CLOSE
+      </v-btn>
+    </v-snackbar>
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import { mapState } from 'vuex'
+export default {
+  name: 'App',
+  data: () => ({
+  }),
+  computed: {
+    ...mapState({
+      color: state => state.alert.color,
+      timeout: state => state.alert.timeout,
+      message: state => state.alert.message
+    }),
+    snackbar: {
+      get: function () {
+        return this.$store.state.alert.snackbar
+      },
+      set: function (newValue) {
+        this.$store.state.alert.snackbar = newValue
+      }
+    }
+  }
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
