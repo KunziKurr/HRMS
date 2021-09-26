@@ -1,5 +1,6 @@
 <template>
 <v-row>
+  <h1>Dashboard</h1>
 </v-row>
 </template>
 

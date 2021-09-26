@@ -2,7 +2,7 @@
 <v-container fluid class="ma-0 pa-0">
   <v-row>
       <v-col cols="12" md="6" class="ma-0" style="padding-bottom: 0px !important;">
-        <v-img style="height:100vh;" cover src="@/assets/leftlogin.png"></v-img>
+        <v-img style="height:100vh; background-attachent:fixed;" class="login_image" cover src="@/assets/leftlogin.png"></v-img>
       </v-col>
       <v-col cols="12" md="6" align-self="center">
           <v-container fluid class="fill-height">
@@ -88,10 +88,16 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .login-header {
     color: #43425D;
     font-size: 25px;
+}
+.v-image__image.v-image__image--cover{
+   width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0rem 0rem !important;
 }
 .login-subheading {
     color: #4D4F5C;
