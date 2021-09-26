@@ -95,7 +95,7 @@ export default {
 }
 .v-image__image.v-image__image--cover{
    width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 0rem 0rem !important;
 }
