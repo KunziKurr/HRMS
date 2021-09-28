@@ -5,7 +5,7 @@
         <span class="homepage_dashboard_sidebar_wrapper_logo"> Buffalo HRMS </span>
         <ul class="homepage_dashboard_sidebar_wrapper_ul">
           <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a active"> <font-awesome-icon icon="home" /> Home</a>
+            <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a active"> <font-awesome-icon icon="archway" /> Home</a>
           </li>
           <li class="homepage_dashboard_sidebar_wrapper_ul_li">
             <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a">Employees</a>
@@ -26,10 +26,35 @@
       </div>
     </sidebar>
     <section class="homepage_dashboard_body">
-      <header></header>
+      <div class="homepage_dashboard_body_header">
+        <span class="homepage_dashboard_body_header_span"> {{headerDate}} </span>
+      </div>
+      <div class="homepage_dashboard_body_content">
+        <div class="homepage_dashboard_body_content_sectioner">
+          <span class="homepage_dashboard_body_content_card_sect_t">Overview</span>
+        <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span">Employees</span>
+        </div>
+        <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span">Leave Days Taken</span>
+        </div>
+         <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span">Gender Distribution</span>
+        </div>
+        </div>
+        <div class="homepage_dashboard_body_content_sectioner">
+        <span class="homepage_dashboard_body_content_card_sect_t">Pending Tasks</span>
+      <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span">User creation</span>
+        </div>
+        <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span">Payroal upload</span>
+        </div>
+      </div>
+      </div>
     </section>
     <sidebar class="homepage_dashboard_right">
-      <h1>diebar</h1>
+     Profile
     </sidebar>
   </div>
 </template>
@@ -37,7 +62,10 @@
 <script>
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  data: () => ({
+    headerDate: new Date().toUTCString()
+  })
 }
 </script>
 

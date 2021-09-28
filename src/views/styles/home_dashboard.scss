@@ -16,7 +16,7 @@ $font-dashboard-border:#9098D82E;
         float: left;
         &_wrapper {
             &_logo {
-                height: 34vh;
+                height: 22vh;
                 display: flex;
                 background-image: url('../../src/assets/logo.png');
                 background-size: 50%;
@@ -48,9 +48,34 @@ $font-dashboard-border:#9098D82E;
         display: block;
         width: 67vw;
         float: left;
-        & header {
+        &_header {
             background-color: $base-color;
             height: 8.5vh;
+            display: flex;
+            align-items: center;
+            color: $base-color-white;
+        }
+        &_content{
+            // display: flex;
+            &_sectioner{
+                margin:3rem 0;
+                position: relative;
+            }
+            &_card{
+                background-color: #F4F7FC;
+                display: inline-flex;
+                width: 30%;
+                border-radius: 7px;
+                margin: 1rem 0.8rem;
+                height: 9rem;
+                box-shadow: 0px 0px 4px #9098d8e5;
+                padding: .6rem;
+                display:inline-block;
+                &_sect_t{
+                    position: absolute;
+                    top:-2rem;
+                }
+            }
         }
     }
     &_right {
@@ -61,3 +86,8 @@ $font-dashboard-border:#9098D82E;
         float: right;
     }
 }
+.login::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+  }
