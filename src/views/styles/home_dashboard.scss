@@ -2,6 +2,7 @@ $base-color:#1C213E;
 $base-color-white:#ffffff;
 $font-link-color:#9098D8;
 $font-dashboard-border:#9098D82E;
+$base-color-green:#31B670;
 html{
     font-size: 62.5%;
 }
@@ -27,19 +28,20 @@ html{
                 background-repeat: no-repeat;
                 justify-content: left;
                 align-items: flex-end;
-                padding: 1rem 1.8rem;
                 color: $base-color-white;
+                padding: 2rem 2.8rem;
+                font-size: 1.2rem;
             }
             &_ul {
                 list-style: none;
                 padding: unset;
                 &_li {
                     border-bottom: 1px solid $font-dashboard-border;
-                    padding: 0.7rem 1.7rem;
+                    padding: 1.3rem 1.7rem;
                     &_a {
                         text-decoration: none;
                         color: $font-link-color;
-                        font-size: 0.9rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -72,39 +74,52 @@ html{
                 margin: 1rem 0.8rem;
                 height: 9rem;
                 box-shadow: 0px 0px 4px #9098d8e5;
-                padding: .6rem;
+                padding: .6rem 1rem;
                 display:inline-block;
                 position: relative;
                 &_sect_t{
                     position: absolute;
                     top:-2rem;
                     left: 1rem;
+                    font-family: Merrant-Bold;
+                    color: $base-color-green;
                 }
                 &_span{
                     font-size: 1rem;
+                    font-family: Merrant-Bold;
                     &_no{
                         display: block;
                         font-size: 1.5rem;
                         position: absolute;
                         top: 32%;
+                        font-family: Merrant-Bold;
+
                         &_g_d{
                             position: absolute;
-                            left: 0.6rem;
+                            left: 1rem;
                             top: 31%;
+                        font-family: Merrant-Bold;
+                        font-size: 1.5rem;
+
                             &_2{
                                 position: absolute;
-                                left: 0.6rem;
-                                top: 50%;
+                                left: 1rem;
+                                top:70%;
+                        font-family: Merrant-Bold; 
+                        font-size: 1.5rem;
+                                
+
                             }
                         }
                     }
                     &_icon{
                         position: absolute;
-                        width: 4rem;
-                        height: 4rem;
-                        background-color: red;
+                        width: 5rem;
+                        height: 5rem;
+                        background-color: #32A05F1A;
+                        border: 1px solid #32A05F1A;
                         right: 1rem;
-                        top: 15%;
+                        top: 10%;
                         border-radius: 50%;
                     }
                     &_diff{
@@ -117,6 +132,25 @@ html{
                         bottom: 1rem;
                         right: 1rem;
                         font-size: .9rem;
+                    color: $base-color-green;
+
+                    }
+                    &_tasks{
+                        &_1{
+                            display: block;
+                            margin-top: 0.7rem;
+                        }
+                        &_2{
+                            display: block;
+                            margin-top: 0.7rem;
+
+                        }
+                        &_link{
+                            position: absolute;
+                            bottom: 0.6rem;
+                    color: $base-color-green;
+
+                        }
                     }
                 }
             }

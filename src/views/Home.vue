@@ -52,7 +52,6 @@
           <span class="homepage_dashboard_body_content_card_span_no_g_d_2">28</span>
 
           <span class="homepage_dashboard_body_content_card_span_icon"></span>
-          <span class="homepage_dashboard_body_content_card_span_diff"> <span>0.3%</span> than last year </span>
           <a href="/login" class="homepage_dashboard_body_content_card_span_info">Show Employees</a>
         </div>
         </div>
@@ -60,9 +59,16 @@
         <span class="homepage_dashboard_body_content_card_sect_t">Pending Tasks</span>
       <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span">User creation</span>
+          <span class="homepage_dashboard_body_content_card_span_tasks_1">  Pending at <strong>Kiokos's </strong> queue </span>
+          <span class="homepage_dashboard_body_content_card_span_tasks_2"> Submitted on 19th June 2021  </span>
+          <a href="/login" class="homepage_dashboard_body_content_card_span_tasks_link">Show Employees</a>
+
         </div>
         <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span">Payroal upload</span>
+            <span class="homepage_dashboard_body_content_card_span_tasks_1">  Pending at <strong>Kiokos's </strong> queue </span>
+          <span class="homepage_dashboard_body_content_card_span_tasks_2"> Submitted on 19th June 2021  </span>
+          <a href="/login" class="homepage_dashboard_body_content_card_span_tasks_link">Show Employees</a>
         </div>
       </div>
       </div>
