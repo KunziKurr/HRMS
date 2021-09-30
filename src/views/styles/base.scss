@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Merrant-Regular";
+    src: url("./assets/fonts/Merrant-Regular.otf");
+}
+@font-face {
+    font-family: "Merrant-Lithe";
+    src: url("./assets/fonts/Merrant-Lithe.otf");
+}
+body, span, p, div, h1, *{
+    font-family: Merrant-Lithe;
+}
+html{
+    font-size: 62.5%;
+}
