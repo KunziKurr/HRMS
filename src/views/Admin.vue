@@ -1,5 +1,5 @@
 <template>
-  <div class="homepage_dashboard">
+  <div class="homepage_dashboard admin">
     <sidebar class="homepage_dashboard_sidebar">
       <div class="homepage_dashboard_sidebar_wrapper">
         <span class="homepage_dashboard_sidebar_wrapper_logo"> Buffalo HRMS </span>
@@ -31,70 +31,46 @@
       </div>
       <div class="homepage_dashboard_body_content">
         <div class="homepage_dashboard_body_content_sectioner">
-          <span class="homepage_dashboard_body_content_card_sect_t">Overview</span>
+          <span class="homepage_dashboard_body_content_card_sect_t">Admin Setup</span>
         <div class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span">Employees</span>
-          <span class="homepage_dashboard_body_content_card_span_no">28</span>
           <span class="homepage_dashboard_body_content_card_span_icon"></span>
-          <span class="homepage_dashboard_body_content_card_span_diff"> <span>0.3%</span> than last year </span>
-          <a href="/login" class="homepage_dashboard_body_content_card_span_info">Show Employees</a>
+          <span class="homepage_dashboard_body_content_card_span">Jobs Setup</span>
+          <span class="homepage_dashboard_body_content_card_span_details">View customer details</span>
         </div>
           <div class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span">Leave Days Taken</span>
-          <span class="homepage_dashboard_body_content_card_span_no">56%</span>
           <span class="homepage_dashboard_body_content_card_span_icon"></span>
-          <span class="homepage_dashboard_body_content_card_span_diff"> <span>0.3%</span> than last year </span>
-          <a href="/login" class="homepage_dashboard_body_content_card_span_info">Check Leave status</a>
+          <span class="homepage_dashboard_body_content_card_span">Leave Setup</span>
+          <span class="homepage_dashboard_body_content_card_span_details">Leave setup</span>
         </div>
          <div class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span">Gender Distribution</span>
-          <span class="homepage_dashboard_body_content_card_span_no_g_d">28</span>
-          <span class="homepage_dashboard_body_content_card_span_no_g_d_2">28</span>
-
           <span class="homepage_dashboard_body_content_card_span_icon"></span>
-          <a href="/login" class="homepage_dashboard_body_content_card_span_info">Show Employees</a>
+          <span class="homepage_dashboard_body_content_card_span">Company Set-up</span>
+          <span class="homepage_dashboard_body_content_card_span_details">About Organization</span>
+        </div>
+          <div class="homepage_dashboard_body_content_card">
+          <span class="homepage_dashboard_body_content_card_span_icon"></span>
+          <span class="homepage_dashboard_body_content_card_span">System Set-up</span>
+          <span class="homepage_dashboard_body_content_card_span_details">System setup</span>
         </div>
         </div>
-        <div class="homepage_dashboard_body_content_sectioner">
-        <span class="homepage_dashboard_body_content_card_sect_t">Pending Tasks</span>
-      <div class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span">User creation</span>
-          <span class="homepage_dashboard_body_content_card_span_tasks_1">  Pending at <strong>Kiokos's </strong> queue </span>
-          <span class="homepage_dashboard_body_content_card_span_tasks_2"> Submitted on 19th June 2021  </span>
-          <a href="/login" class="homepage_dashboard_body_content_card_span_tasks_link">Show Employees</a>
-
-        </div>
-        <div class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span">Payroal upload</span>
-            <span class="homepage_dashboard_body_content_card_span_tasks_1">  Pending at <strong>Kiokos's </strong> queue </span>
-          <span class="homepage_dashboard_body_content_card_span_tasks_2"> Submitted on 19th June 2021  </span>
-          <a href="/admin" class="homepage_dashboard_body_content_card_span_tasks_link">Show Employees</a>
-        </div>
-      </div>
       </div>
     </section>
     <sidebar class="homepage_dashboard_right">
      <div class="homepage_dashboard_right_container">
         <img src="" alt="" class="homepage_dashboard_right_container_img">
         <span class="homepage_dashboard_right_container_name">John Doe</span>
-
         <span class="homepage_dashboard_right_container_email">example@example.com</span>
-
      </div>
     <v-date-picker
       is-dark
       is-range
-      style=" .v-picker__body{
-    with:27rem"
       />
     </sidebar>
   </div>
 </template>
-
 <script>
-
 export default {
-  name: 'Home',
+  name: 'Admin',
   data: () => ({
     headerDate: new Date().toUTCString()
   })
@@ -102,5 +78,5 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import './styles/home_dashboard.scss';
-
+@import './styles/admin.scss';
 </style>

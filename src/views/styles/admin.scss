@@ -1,0 +1,23 @@
+.admin{
+  & .homepage_dashboard_body_content_card{
+      
+        width: 22%;
+        border-radius: 7px;
+        margin: 1rem 1rem;
+      
+  }  
+  & .homepage_dashboard_body_content_card_span {
+    position: absolute;
+    left: 8rem;
+    top: 27%;
+}
+& .homepage_dashboard_body_content_card_span_details{
+    position: absolute;
+    left: 8rem;
+    bottom: 2.2rem;
+}
+& .homepage_dashboard_body_content_card_span_icon {
+    right: unset;
+    top:20%
+}
+}
