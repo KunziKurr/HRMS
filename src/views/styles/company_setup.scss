@@ -1,0 +1,23 @@
+.admin .homepage_dashboard_body{
+  
+    &_wrapper{
+        padding: 2rem 0.5rem;
+        &_back{
+            background-color: #31B670;
+            padding: 1.2rem 3.6rem;
+            margin: 1rem 1rem;
+            color: #fff;
+            text-decoration: navajowhite;
+            font-size: 1.2rem;
+            border-radius: 0.4rem;
+        }
+        &_path{
+            color: #31B670;
+            font-size: 1.2rem;
+            & strong{
+                color: #000;
+            }
+        }
+    
+}
+}

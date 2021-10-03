@@ -14,7 +14,6 @@ library.add(faArchway)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('calendar', Calendar)
 Vue.component('date-picker', DatePicker)
-
 Vue.config.productionTip = false
 
 new Vue({
