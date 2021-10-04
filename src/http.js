@@ -18,7 +18,7 @@ instance.interceptors.request.use(function (config) {
   // if token exists and token url not the current request url used to get the token
   if (token && token && tokenUrl === -1) {
     console.log(token)
-    config.headers.Authorization = `Bearer ${token}`
+    config.headers.Authorization = `${token}`
   }
   return config
 }, function (err) {

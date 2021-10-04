@@ -51,7 +51,7 @@
           <span class="homepage_dashboard_body_content_card_sect_t">Overview</span>
         <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span">Employees</span>
-          <span class="homepage_dashboard_body_content_card_span_no">28</span>
+          <span class="homepage_dashboard_body_content_card_span_no">{{ employeeStats.Employees.count }} </span>
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/employee.svg" alt="" srcset="">
           </span>
@@ -105,12 +105,19 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 
 export default {
   name: 'Home',
   data: () => ({
     headerDate: new Date().toUTCString()
-  })
+  }),
+  computed: mapState({
+    employeeStats: state => state.dashboard.employeeStats
+  }),
+  created () {
+    this.$store.dispatch('dashboard/getEmployeeStats')
+  }
 }
 </script>
 <style lang="scss" scoped>
