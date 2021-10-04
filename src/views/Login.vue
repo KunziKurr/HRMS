@@ -4,7 +4,7 @@
       <v-col cols="12" md="6" class="ma-0" style="padding-bottom: 0px !important;">
         <v-img style="height:100vh; background-attachent:fixed;" class="login_image" cover src="@/assets/leftlogin.png"></v-img>
       </v-col>
-      <v-col cols="12" md="6" align-self="center">
+      <v-col class="login_page" cols="12" md="6" align-self="center">
           <v-container fluid class="fill-height">
               <v-card justify="center"  class="mx-auto" width="80%" flat>
                   <v-card-text>
@@ -103,6 +103,7 @@ export default {
     color: #4D4F5C;
     font-style: 'Merrant';
     font-size: 20px;
+    width:max-content;
 }
 .forgot-password {
     color: #74C15A;
@@ -112,4 +113,9 @@ export default {
 .login-btn {
     color: white;
 }
+.login_page .v-card > *:first-child:not(.v-btn):not(.v-chip):not(.v-avatar), .v-card > .v-card__progress + *:not(.v-btn):not(.v-chip):not(.v-avatar) {
+   border:unset !important;
+    display: block !important;
+}
+
 </style>
