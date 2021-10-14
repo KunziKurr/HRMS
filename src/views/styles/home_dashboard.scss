@@ -18,6 +18,8 @@ html{
         display: block;
         width: 16vw;
         float: left;
+        position: fixed;
+        left: 0;
         &_wrapper {
             &_logo {
                 height: 22vh;
@@ -60,12 +62,17 @@ html{
         display: block;
         width: 65vw;
         float: left;
+        margin-left: 16vw;
         &_header {
-            background-color: $base-color;
+            background-color: #1C213E;
             height: 8.5vh;
             display: flex;
             align-items: center;
-            color: $base-color-white;
+            color: #ffffff;
+            z-index: 1001;
+            position: fixed;
+            right: 0;
+            left: 16vw;
             &_container{
                 position: fixed;
                 right: 3rem;
@@ -92,7 +99,7 @@ html{
             }
         }
         &_content{
-            // display: flex;
+            margin: 14vh 0;
             &_sectioner{
                 margin:3rem 0;
                 position: relative;

@@ -25,6 +25,7 @@ const actions = {
     })
   },
   setUser ({ commit }, user) {
+    console.log(user)
     commit('SET_USER', user)
   },
   setToken ({ commit }, token) {

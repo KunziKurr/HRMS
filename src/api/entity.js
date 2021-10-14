@@ -2,9 +2,12 @@ import http from '../http'
 
 export default {
   get () {
-    return http.get('/entity/create')
+    return http.get('/entity/view')
   },
-  create () {
-    return http.post('/entity/create')
+  create (request) {
+    return http.post('/entity/create', request)
+  },
+  search (entityId) {
+    return http.get('/entity/view', { Entityid: `${entityId}` })
   }
 }

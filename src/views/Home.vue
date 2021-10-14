@@ -1,6 +1,6 @@
 <template>
-  <div class="homepage_dashboard">
-    <sidebar class="homepage_dashboard_sidebar">
+<div class="homepage_dashboard">
+      <section class="homepage_dashboard_sidebar">
       <div class="homepage_dashboard_sidebar_wrapper">
         <span class="homepage_dashboard_sidebar_wrapper_logo"> Buffalo HRMS </span>
         <ul class="homepage_dashboard_sidebar_wrapper_ul">
@@ -36,7 +36,7 @@
           </li>
         </ul>
       </div>
-    </sidebar>
+    </section>
     <section class="homepage_dashboard_body">
       <div class="homepage_dashboard_body_header">
         <span class="homepage_dashboard_body_header_span"> {{headerDate}} </span>
@@ -106,9 +106,12 @@
 
 <script>
 import { mapState } from 'vuex'
-
+import menuTemplate from './Menu_template.vue'
 export default {
   name: 'Home',
+  components: {
+    menuTemplate
+  },
   data: () => ({
     headerDate: new Date().toUTCString()
   }),

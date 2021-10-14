@@ -1,13 +1,13 @@
 .admin .homepage_dashboard_body{
   
     &_wrapper{
-        padding: 2rem 0.5rem;
+        padding: 0rem 0.5rem;
         &_back{
             background-color: #31B670;
             padding: 1.2rem 3.6rem;
             margin: 1rem 1rem;
             color: #fff;
-            text-decoration: navajowhite;
+            text-decoration: none;
             font-size: 1.2rem;
             border-radius: 0.4rem;
         }
@@ -18,6 +18,150 @@
                 color: #000;
             }
         }
-    
+        &_inner_container{
+            width: 96%;
+            margin: 3rem auto;
+            position: relative;
+            &_wrapper{
+                &_btn{
+                    margin: 1.5rem auto;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    border: none;
+                    padding: 1.2rem 4rem;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    background-color: #31B670;
+                    font-family: "Merrant-Bold";
+                    border-radius: .5rem;
+                    &.save{
+                        right: 25vw;
+                        margin-right: unset;
+                    }
+                    &.cancel{
+                        left: 30vw;
+                        margin-left: unset;
+                        color: #31B670;
+                        border: 1px solid #31B670;
+                        background: no-repeat;
+                    }
+                }
+
+            }
+            &_model_box{
+                border: 2px solid #DDD;
+
+                &_header{
+                    height: 5rem;
+                    background-color: #DDDDDD;
+                    display: flex;
+                }
+                &_ul{
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    &_li{
+                        display: inline;
+                        padding: 0rem 2.3rem;
+                        margin-left: -2.3rem;
+                        &.active{
+                            background-color: #fff;
+                            padding: 1rem 2.1rem;
+                            border: 2px solid #31b670;
+                            margin-left: -1.5rem;
+                            margin-right: 1rem;
+                        }
+                        &_a{
+                            font-size: 1.2rem;
+                            color: #333;
+                            text-decoration: none;
+                            font-family: "Merrant-Regular";
+                        }
+                    }
+                }
+                &_body{
+                    &_wrapper{
+
+                    }
+                    &_profile{
+                        width: 47%;
+                        float: right;
+                        &_wrapper{
+                            margin: 1rem 0;
+                            position: relative;
+                            &_img{
+                                height: 30vh;
+                                width: 17vw;
+                                display: inline-block;
+                                border: 1px solid #ddd;
+                                border-radius: 1rem;
+                            }
+                            &_btn{
+                                position: absolute;
+                                top: 12.5vh;
+                                margin-left: 6rem;
+                                background-color: #31b670;
+                                padding: 1.3rem 1.7rem;
+                                border-radius: 0.5rem;
+                                font-size: 1.2rem;
+                                color: #fff;
+                                font-family: "Merrant-Bold";
+                            }
+                        }
+                    }
+                    
+                }
+                &_bod{
+                    &_form{
+                        padding: 1rem 2rem;
+                        display: inline-block;
+                        &_ctrl{
+                            position: relative;
+                        }
+                        &_label{
+                            display: inline-block ;
+                            width: 10vw;
+                            padding: 1rem 0;
+                            font-family: "Merrant-Bold";
+                            font-size: 1.1rem;
+                            &.check{
+                            // position: absolute;
+                            }
+                        }
+                        &_input{
+                            display: inline-block;
+                            border: 2px solid #707070a1;
+                            border-radius: 0.4rem;
+                            padding: 0.6rem 0.5rem;
+                            width: 23vw;
+                            margin: 0.9rem 3rem;
+                            font-size: 1.2rem;
+                            transition: all .4s;
+                            &.notActive{
+                                border: none;
+                                pointer-events: none;
+                            }
+                            &.check{
+                                &_no{
+                                    position: absolute;
+                                    right: 1rem;
+                                    
+                                   }
+                                   &_yes{
+                                    position: absolute;
+                                    left: 0rem;
+                                   }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+  
 }
+}
+.hidden{
+    display: none
 }

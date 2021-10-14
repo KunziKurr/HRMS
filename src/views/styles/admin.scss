@@ -36,6 +36,10 @@
 }
 & .homepage_dashboard_body{
     width: 84vw;
+    margin-left: 16vw;
+    &_content{
+        margin: 15vh 0rem 29rem 0;
+    }
 }
 
 

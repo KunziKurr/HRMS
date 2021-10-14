@@ -1,11 +1,15 @@
 import entityService from '../../api/entity'
 
 const state = {
-  entities: []
+  entities: [],
+  entity: {}
 }
 const mutations = {
   SET_ENTITIES (state, entities) {
     state.entities = entities
+  },
+  SET_ENTITY (state, entity) {
+    state.entity = entity
   }
 }
 
@@ -13,6 +17,13 @@ const actions = {
   get ({ commit }) {
     entityService.get().then(response => {
       commit('SET_ENTITIES', response.data)
+    }).catch(error => {
+      console.log(error)
+    })
+  },
+  search ({ commit }, entityId) {
+    entityService.search(entityId).then(response => {
+      commit('SET_ENTITY', response.data[0])
     }).catch(error => {
       console.log(error)
     })

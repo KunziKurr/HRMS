@@ -1,42 +1,6 @@
 <template>
-  <div class="homepage_dashboard admin">
-    <sidebar class="homepage_dashboard_sidebar">
-      <div class="homepage_dashboard_sidebar_wrapper">
-        <span class="homepage_dashboard_sidebar_wrapper_logo"> Buffalo HRMS </span>
-        <ul class="homepage_dashboard_sidebar_wrapper_ul">
-        <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="/Home" class="homepage_dashboard_sidebar_wrapper_ul_li_a active">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/home.svg" alt="" srcset="">
-             Home</a>
-          </li>
-          <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/employee.svg" alt="" srcset="">
-              Employees</a>
-          </li>
-          <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-          <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/payroll.svg" alt="" srcset="">
-            Payroll</a>
-          </li>
-          <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/leave-management.svg" alt="" srcset="">
-              Leave Management</a>
-          </li>
-          <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="" class="homepage_dashboard_sidebar_wrapper_ul_li_a">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/report.svg" alt="" srcset="">
-              Reports</a>
-          </li>
-          <li class="homepage_dashboard_sidebar_wrapper_ul_li">
-            <a href="/Admin" class="homepage_dashboard_sidebar_wrapper_ul_li_a">
-            <img class="homepage_dashboard_sidebar_wrapper_ul_li_a_icon" src="../assets/setting.svg" alt="" srcset="">
-            Admin Setup</a>
-          </li>
-        </ul>
-      </div>
-    </sidebar>
+   <div class="homepage_dashboard admin">
+      <menuTemplate />
     <!-- BODY CONTENT HERE -->
     <section class="homepage_dashboard_body">
       <div class="homepage_dashboard_body_header">
@@ -50,13 +14,13 @@
       <div class="homepage_dashboard_body_content">
         <div class="homepage_dashboard_body_content_sectioner">
           <span class="homepage_dashboard_body_content_card_sect_t">Admin Setup</span>
-        <a href="/company-setup" class="homepage_dashboard_body_content_card">
+        <router-link to="/company-setup" class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/home.svg" alt="" srcset="">
           </span>
           <span class="homepage_dashboard_body_content_card_span">Company Setup</span>
           <span class="homepage_dashboard_body_content_card_span_details">View customer details</span>
-        </a>
+        </router-link>
           <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/employee.svg" alt="" srcset="">
@@ -81,28 +45,23 @@
         </div>
       </div>
     </section>
-    <!-- <sidebar class="homepage_dashboard_right">
-     <div class="homepage_dashboard_right_container">
-        <img src="" alt="" class="homepage_dashboard_right_container_img">
-        <span class="homepage_dashboard_right_container_name">John Doe</span>
-        <span class="homepage_dashboard_right_container_email">example@example.com</span>
-     </div>
-    <v-date-picker
-      is-dark
-      is-range
-      />
-    </sidebar> -->
-  </div>
+
+    </div>
 </template>
 <script>
+import menuTemplate from './Menu_template.vue'
 export default {
   name: 'Admin',
+  components: {
+    menuTemplate
+  },
   data: () => ({
     headerDate: new Date().toUTCString()
   })
 }
 </script>
-<style lang="scss" scoped>
+
+<style lang="scss"  >
 @import './styles/home_dashboard.scss';
 @import './styles/admin.scss';
 </style>

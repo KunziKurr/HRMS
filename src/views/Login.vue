@@ -68,7 +68,7 @@ export default {
         this.$store.dispatch('session/setUser', response.data.user_info)
         this.$store.dispatch('session/setToken', token)
         if (window.localStorage) {
-          window.localStorage.setItem('user', JSON.stringify(response.data.user))
+          window.localStorage.setItem('user', JSON.stringify(response.data.user_info))
           window.localStorage.setItem('token', token)
         }
         this.loading = false
