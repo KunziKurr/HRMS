@@ -13,28 +13,31 @@
       </div>
       <div class="homepage_dashboard_body_content">
         <div class="homepage_dashboard_body_content_sectioner">
-          <span class="homepage_dashboard_body_content_card_sect_t">Admin Setup</span>
-        <router-link to="/company-setup" class="homepage_dashboard_body_content_card">
-          <span class="homepage_dashboard_body_content_card_span_icon">
-             <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/home.svg" alt="" srcset="">
-          </span>
-          <span class="homepage_dashboard_body_content_card_span">Company Setup</span>
-          <span class="homepage_dashboard_body_content_card_span_details">View customer details</span>
+          <router-link to="/company-setup" class="homepage_dashboard_body_content_card">
+              <span class="homepage_dashboard_body_content_card_sect_t">Admin Setup</span>
+              <span class="homepage_dashboard_body_content_card_span_icon">
+                <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/home.svg" alt="" srcset="">
+              </span>
+              <span class="homepage_dashboard_body_content_card_span">Company Setup</span>
+              <span class="homepage_dashboard_body_content_card_span_details">View customer details</span>
         </router-link>
-          <div class="homepage_dashboard_body_content_card">
+
+          <router-link to="/job-setup" class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/employee.svg" alt="" srcset="">
           </span>
-          <span class="homepage_dashboard_body_content_card_span">Leave Setup</span>
-          <span class="homepage_dashboard_body_content_card_span_details">Leave setup</span>
-        </div>
+          <span class="homepage_dashboard_body_content_card_span">Job Setup</span>
+          <span class="homepage_dashboard_body_content_card_span_details">Job setup</span>
+        </router-link>
+
          <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/leave-management.svg" alt="" srcset="">
           </span>
-          <span class="homepage_dashboard_body_content_card_span">Job Set-up</span>
+          <span class="homepage_dashboard_body_content_card_span">Leave Set-up</span>
           <span class="homepage_dashboard_body_content_card_span_details">About Organization</span>
         </div>
+
           <div class="homepage_dashboard_body_content_card">
           <span class="homepage_dashboard_body_content_card_span_icon">
              <img class="homepage_dashboard_body_content_card_span_icon_img" src="../assets/setting.svg" alt="" srcset="">

@@ -1,8 +1,7 @@
-.admin .homepage_dashboard_body{
-  
-    &_wrapper{
+.admin .homepage_dashboard_body {
+    &_wrapper {
         padding: 0rem 0.5rem;
-        &_back{
+        &_back {
             background-color: #31B670;
             padding: 1.2rem 3.6rem;
             margin: 1rem 1rem;
@@ -11,19 +10,19 @@
             font-size: 1.2rem;
             border-radius: 0.4rem;
         }
-        &_path{
+        &_path {
             color: #31B670;
             font-size: 1.2rem;
-            & strong{
+            & strong {
                 color: #000;
             }
         }
-        &_inner_container{
+        &_inner_container {
             width: 96%;
             margin: 3rem auto;
             position: relative;
-            &_wrapper{
-                &_btn{
+            &_wrapper {
+                &_btn {
                     margin: 1.5rem auto;
                     position: absolute;
                     left: 0;
@@ -35,11 +34,11 @@
                     background-color: #31B670;
                     font-family: "Merrant-Bold";
                     border-radius: .5rem;
-                    &.save{
+                    &.save {
                         right: 25vw;
                         margin-right: unset;
                     }
-                    &.cancel{
+                    &.cancel {
                         left: 30vw;
                         margin-left: unset;
                         color: #31B670;
@@ -47,32 +46,55 @@
                         background: no-repeat;
                     }
                 }
-
             }
-            &_model_box{
+            &_add {
+                background-color: #DDDDDD;
+                width: 95%;
+                margin: 1rem auto;
+                padding: 1.5rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+                border-radius: .75rem;
+                border: 1px solid #B7B7B7;
+                &_label {
+                    font-size: 1.2rem;
+                }
+                &_btn {
+                    position: absolute;
+                    right: 2rem;
+                    background-color: #31B670;
+                    color: #fff;
+                    font-size: 1.2rem;
+                    padding: 1rem 2rem;
+                    top: .5rem;
+                    bottom: .5rem;
+                    border-radius: .5rem;
+                }
+            }
+            &_model_box {
                 border: 2px solid #DDD;
-
-                &_header{
+                &_header {
                     height: 5rem;
                     background-color: #DDDDDD;
                     display: flex;
                 }
-                &_ul{
+                &_ul {
                     list-style: none;
                     display: flex;
                     align-items: center;
-                    &_li{
+                    &_li {
                         display: inline;
                         padding: 0rem 2.3rem;
                         margin-left: -2.3rem;
-                        &.active{
+                        &.active {
                             background-color: #fff;
                             padding: 1rem 2.1rem;
                             border: 2px solid #31b670;
                             margin-left: -1.5rem;
                             margin-right: 1rem;
                         }
-                        &_a{
+                        &_a {
                             font-size: 1.2rem;
                             color: #333;
                             text-decoration: none;
@@ -80,24 +102,22 @@
                         }
                     }
                 }
-                &_body{
-                    &_wrapper{
-
-                    }
-                    &_profile{
+                &_body {
+                    &_wrapper {}
+                    &_profile {
                         width: 47%;
                         float: right;
-                        &_wrapper{
+                        &_wrapper {
                             margin: 1rem 0;
                             position: relative;
-                            &_img{
+                            &_img {
                                 height: 30vh;
                                 width: 17vw;
                                 display: inline-block;
                                 border: 1px solid #ddd;
                                 border-radius: 1rem;
                             }
-                            &_btn{
+                            &_btn {
                                 position: absolute;
                                 top: 12.5vh;
                                 margin-left: 6rem;
@@ -110,26 +130,25 @@
                             }
                         }
                     }
-                    
                 }
-                &_bod{
-                    &_form{
+                &_bod {
+                    &_form {
                         padding: 1rem 2rem;
                         display: inline-block;
-                        &_ctrl{
+                        &_ctrl {
                             position: relative;
                         }
-                        &_label{
-                            display: inline-block ;
+                        &_label {
+                            display: inline-block;
                             width: 10vw;
                             padding: 1rem 0;
                             font-family: "Merrant-Bold";
                             font-size: 1.1rem;
-                            &.check{
-                            // position: absolute;
+                            &.check {
+                                // position: absolute;
                             }
                         }
-                        &_input{
+                        &_input {
                             display: inline-block;
                             border: 2px solid #707070a1;
                             border-radius: 0.4rem;
@@ -138,30 +157,28 @@
                             margin: 0.9rem 3rem;
                             font-size: 1.2rem;
                             transition: all .4s;
-                            &.notActive{
+                            &.notActive {
                                 border: none;
                                 pointer-events: none;
                             }
-                            &.check{
-                                &_no{
+                            &.check {
+                                &_no {
                                     position: absolute;
                                     right: 1rem;
-                                    
-                                   }
-                                   &_yes{
+                                }
+                                &_yes {
                                     position: absolute;
                                     left: 0rem;
-                                   }
+                                }
                             }
                         }
                     }
                 }
-                
             }
         }
-  
+    }
 }
-}
-.hidden{
+
+.hidden {
     display: none
 }
